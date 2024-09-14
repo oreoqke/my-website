@@ -17,8 +17,13 @@ function App() {
         <h1>Alexey Kovalenko</h1>
         <p> Software Engineer, Premed, Biochemist, Nucleate Communications</p>
         <div id="btns" className='btns'>
-          <button className="email-btn">Send Email</button>
-          <button className="CV-btn">Download CV</button>
+          <button className="email-btn">
+            <a href="mailto:2000ako@gmail.com" className="email-btn"> Send Email</a>
+          </button>
+          {/* <a href="mailto:2000ako@gmail.com" className="email-btn"> Send Email</a> */}
+          <button className="CV-btn">
+            <a href="Alexey_Resume.pdf" className='CV-btn' >Download CV</a>
+          </button>
         </div>
       </div>
       <div id="personal-profile">
