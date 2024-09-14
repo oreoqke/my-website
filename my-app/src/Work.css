@@ -1,0 +1,134 @@
+/* Base styling for the work experience section */
+.work-experience {
+    max-width: 640px;
+    margin-top: 15px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .work-experience h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .work-experience .intro {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for individual experience items */
+  .experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px; /* Padding to account for the circle and line */
+    position: relative;
+  }
+  
+  /* Add continuous vertical line */
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    left: 10px; /* Adjust to position the line next to the text */
+    top: 0;
+    bottom: -30px; /* Ensure the line goes past the end of the item */
+    width: 2px;
+    background-color: #eaeaea;
+    z-index: 1; /* Line stays behind the circles */
+  }
+
+  /* Target the last experience-item to stop the line earlier */
+  .experience-item:last-child::before {
+    bottom: 30px; /* Stop the line at the bottom of the last item */
+  }
+  
+  /* Add circle for each experience */
+  .experience-item::after {
+    content: '';
+    position: absolute;
+    left: 5px; /* Align the circle with the line */
+    top: 0; /* Align circle with the experience title */
+    width: 12px;
+    height: 12px;
+    background-color: #333; /* Darker color for the circle */
+    border-radius: 50%;
+    z-index: 2; /* Circle appears above the line */
+  }
+  
+  /* Experience details */
+  .experience-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .experience-details .company {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+  .experience-details .location {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .experience-details .description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Styling for the dates section */
+  .experience-dates {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-badge {
+    background-color: #f3f4f6;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .work-experience {
+      width: 100%;
+      margin-left: -20px;
+    }
+
+    .experience-item {
+      display: block;
+      padding-left: 30px;
+    }
+  
+    .experience-dates {
+      margin-top: 10px;
+    }
+  
+    .experience-details .description {
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust the circle position for mobile */
+    .experience-item::after {
+      left: 5px;
+    }
+  }

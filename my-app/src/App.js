@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Navbar';
 import Profile from './Profile';
+import WorkExperience from './Work';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         {/* optional section */}
       </div>
       <div id="experience">
+        <WorkExperience />
       </div>
       <div id="education">
       </div>
