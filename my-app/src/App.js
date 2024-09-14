@@ -5,6 +5,7 @@ import WorkExperience from './Work';
 import Education from './Education';
 import Skills from './Skills';
 import Languages from './Languages';
+import Awards from './Awards';
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         <Languages />
       </div>
       <div id="awards">
-
+        <Awards />
       </div>
       <div id="recommendations">
         {/* optional section */}
