@@ -1,8 +1,45 @@
-
+*{
+    font-family: Inter, sans-serif;
+}
 
 .App{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: rgb(249, 249, 249);
     padding-bottom: 1000px; /*fix this later*/
+}
+
+.title{
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.CV-btn {
+  background-color: rgb(237, 237, 238);
+  color: black;
+  height: 40px;
+  cursor: pointer;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  margin-left: 5px;
+}
+
+.email-btn {
+    background-color: #000;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-right: 5px;
 }
