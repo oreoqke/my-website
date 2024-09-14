@@ -1,0 +1,93 @@
+/* Base styling for the education section */
+.education {
+    margin-top: 15px;
+    max-width: 640px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .education .intro {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea; /* Separator line between experiences */
+    padding-bottom: 20px;
+}
+  
+  /* Styling for individual education items */
+  .education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea; /* Separator line between experiences */
+  }
+  
+  .education-item:last-child {
+    border-bottom: none; /* Remove separator for the last item */
+    padding-bottom: 0;
+ }
+  
+  .education-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .education-details .degree {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+  .education-details .description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Styling for the dates section */
+  .education-dates {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-badge {
+    background-color: #f3f4f6;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    white-space: nowrap; /* Prevents the date from wrapping */
+  }
+
+    /* Responsive Styles */
+@media (max-width: 768px) {
+    .education {
+      width: 100%;
+      margin-left: -20px;
+    }
+  
+    .education-item {
+      display: block;
+    }
+  
+    .education-dates {
+      margin-top: 10px;
+    }
+  
+    .education-details .description {
+      margin-bottom: 10px;
+    }
+}
