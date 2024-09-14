@@ -1,0 +1,79 @@
+/* Base styling for the languages section */
+.languages {
+    margin-top: 15px;
+    max-width: 640px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .languages h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .languages .intro {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+  }
+  
+  /* Styling for individual language items */
+  .language-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  /* Remove the separator for the last language item */
+  .language-item.last {
+    border-bottom: none;
+  }
+  
+  .language-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .language-details .flag {
+    font-size: 24px; /* Adjust size of the flag */
+  }
+  
+  .language-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .language-details .proficiency {
+    font-size: 14px;
+    color: #999;
+    margin-left: 15px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .languages {
+      width: 100%;
+      margin-left: -20px;
+    }
+  
+    .language-item {
+      display: block;
+    }
+  
+    .language-details {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .language-details .flag {
+      margin-bottom: 10px;
+    }
+  }
