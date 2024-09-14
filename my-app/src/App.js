@@ -6,6 +6,7 @@ import Education from './Education';
 import Skills from './Skills';
 import Languages from './Languages';
 import Awards from './Awards';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         {/* optional section */}
       </div>
       <div id="contact">
+        <Contact />
       </div>
     </div>
   );
