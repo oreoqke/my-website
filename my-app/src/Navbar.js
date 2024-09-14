@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.css';
+import './Navbar.css'; // Your Navbar CSS file
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,17 +36,17 @@ const Navbar = () => {
 
         {/* Menu items that will be toggled */}
         <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Experience</li>
-          <li>Education</li>
-          <li>Skills</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#personal-profile">Profile</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
 
-        {/* Contact button stays visible */}
+        {/* Contact button */}
         {!isOpen && (
           <button className="navbar-contact-btn">
-            Contact Me
+                <a href="mailto:2000ako@gmail.com" className="email-btn"> Contact Me</a>
           </button>
         )}
       </div>

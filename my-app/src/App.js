@@ -7,13 +7,14 @@ import Skills from './Skills';
 import Languages from './Languages';
 import Awards from './Awards';
 import Contact from './Contact';
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <br />
-      <div id="title" className="title">
+      <section id="home" className="title">
         <h1>Alexey Kovalenko</h1>
         <p> Software Engineer, Premed, Biochemist, Nucleate Communications</p>
         <div id="btns" className='btns'>
@@ -25,7 +26,7 @@ function App() {
             <a href="Alexey_Resume.pdf" className='CV-btn' >Download CV</a>
           </button>
         </div>
-      </div>
+      </section>
       <div id="personal-profile">
         <Profile />
       </div>

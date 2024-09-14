@@ -44,3 +44,8 @@
     margin-right: 5px;
     text-decoration: none;
 }
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
