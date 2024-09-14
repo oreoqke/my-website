@@ -6,7 +6,7 @@ const WorkExperience = () => {
     {
       title: 'Data Scientist & Business Consultant',
       company: 'TechNova · Full-Time',
-      location: 'Phoenix, Arizona, USA',
+      location: ' Phoenix, Arizona, USA',
       description:
         'Demonstrating a seamless integration of data science acumen and business consulting proficiency...',
       dates: 'Jun 2021 - Present',
@@ -14,7 +14,7 @@ const WorkExperience = () => {
     {
       title: 'Data Analyst & Business Strategist',
       company: 'SwiftEdge · Contract',
-      location: 'Dallas, Texas, USA',
+      location: ' Dallas, Texas, USA',
       description:
         'Skillfully combining data analysis proficiency with strategic business acumen...',
       dates: 'Oct 2017 - May 2021',
@@ -22,7 +22,7 @@ const WorkExperience = () => {
     {
         title: 'Data Analyst & Business Strategist',
         company: 'SwiftEdge · Contract',
-        location: 'Dallas, Texas, USA',
+        location: ' Dallas, Texas, USA',
         description:
           'Skillfully combining data analysis proficiency with strategic business acumen...',
         dates: 'Oct 2017 - May 2021',
@@ -30,7 +30,7 @@ const WorkExperience = () => {
       {
         title: 'Data Analyst & Business Strategist',
         company: 'SwiftEdge · Contract',
-        location: 'Dallas, Texas, USA',
+        location: ' Dallas, Texas, USA',
         description:
           'Skillfully combining data analysis proficiency with strategic business acumen...',
         dates: 'Oct 2017 - May 2021',

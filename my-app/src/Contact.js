@@ -36,12 +36,9 @@ const Contact = () => {
           <a href="https://www.facebook.com/alexey.kovalenko.9803/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook"></i>
           </a>
-          {/* <a href="#" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-telegram"></i>
+          <a href="https://github.com/oreoqke" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-medium"></i>
-          </a> */}
         </div>
       </div>
 
