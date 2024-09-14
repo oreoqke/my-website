@@ -39,6 +39,11 @@
   .navbar-menu li {
     cursor: pointer;
   }
+
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #333;
+  }
   
   .navbar-menu li:hover {
     color: #000;
