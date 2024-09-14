@@ -1,7 +1,7 @@
 /* Base styling for the education section */
 .education {
     margin-top: 15px;
-    max-width: 640px;
+    max-width: 680px;
     padding: 20px;
     font-family: 'Inter', sans-serif;
     border-radius: 15px;
@@ -73,7 +73,7 @@
   }
 
     /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .education {
       width: 100%;
       margin-left: -20px;

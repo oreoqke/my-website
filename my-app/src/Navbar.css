@@ -8,9 +8,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-top: 30px;
-    position: relative;
     width: 100%; /* Use full width for responsiveness */
     max-width: 680px;
+    position: fixed;
+    z-index: 1000;
   }
   
   .navbar-left {
@@ -85,10 +86,15 @@
   }
   
   /* For mobile screens, hide the navbar menu and show the toggle button */
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .navbar {
-        margin-left: 20px;
-        margin-right: 20px;
+      position: fixed;
+      padding: 10px;
+      left: 0;
+      right: 0;
+      width: calc(100% - 60px); /* Full width minus margin for both sides */
+      margin-left: 20px; /* Add margin to the left */
+      margin-right: 20px; /* Add margin to the right */
     }
 
     .navbar-menu {
