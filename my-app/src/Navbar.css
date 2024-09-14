@@ -1,0 +1,126 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 30px;
+    position: relative;
+    width: 100%; /* Use full width for responsiveness */
+    max-width: 680px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+  }
+  
+  .navbar-menu li {
+    cursor: pointer;
+  }
+  
+  .navbar-menu li:hover {
+    color: #000;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-contact-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 70px;
+  }
+  
+  .navbar-contact-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Hamburger Button */
+  .navbar-toggle {
+    display: none; /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* padding: 10px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* For mobile screens, hide the navbar menu and show the toggle button */
+  @media (max-width: 768px) {
+    .navbar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .navbar-menu {
+      display: none; /* Hide menu by default on small screens */
+      /* position: absolute; */
+      position: fixed;
+      top: 100px;
+      left: 20px; /* 20px from the left edge */
+      right: 20px;
+      background-color: white;
+      flex-direction: column;
+      align-items: left;
+      gap: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+
+    }
+  
+    /* Show the menu when open */
+    .navbar-menu.open {
+      display: flex;
+      border-radius: 20px;
+    }
+  
+    /* Show the hamburger button */
+    .navbar-toggle {
+      display: flex; /* Ensure hamburger button is visible on small screens */
+    }
+  
+    /* Hide contact button on small screens */
+    .navbar-contact-btn {
+      display: none;
+    }
+  }
