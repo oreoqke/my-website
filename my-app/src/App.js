@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Profile from './Profile';
 import WorkExperience from './Work';
 import Education from './Education';
+import Skills from './Skills';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         {/* optional section */}
       </div>
       <div id="skills">
+        <Skills />
       </div>
       <div id="languages">
       </div>
